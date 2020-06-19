@@ -5,7 +5,7 @@ import StatInfo from "./StatInfo"
 const Statistics = ({title, stats})=> (
  
   <section>
-  <h2>Upload stats</h2>
+{title && <h2>{title}</h2>}
   <ul>
     {stats.map(({id, label, percentage}) =>(
       <li key={id}>
@@ -13,13 +13,18 @@ const Statistics = ({title, stats})=> (
         label={label}
         percentage={percentage}
         />
-
-      </li>
+         </li>
     ))}
   </ul>
   </section>
 )
+
+
+Statistics.defaultProps = {
+  title:""
+}
 Statistics.propTypes = {
+  title: PropTypes.string,
   stats:PropTypes.arrayOf(
     PropTypes.shape({
       id:PropTypes.string.isRequired,

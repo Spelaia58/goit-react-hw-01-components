@@ -8,7 +8,7 @@ const Friend = ({ avatar, name, IsOnline }) => {
       <span
         className={styles.Status}
         style={{
-          backgroundColor: IsOnline ? "red" : "red",
+          backgroundColor: IsOnline ? "red" : "green",
         }}
       ></span>
       <img className={styles.Avatar} src={avatar} alt={name} width="48" />

@@ -2,15 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Friends.module.css";
 
-const Friend = ({ avatar, name, isOnline }) => {
-  const statusOnline = [styles.Status];
-  if (isOnline) {
-    statusOnline.push(styles.StatusOnline);
-  }
-
+const Friend = ({ avatar, name, IsOnline }) => {
   return (
     <>
-      <span className={statusOnline.join(styles.StatusOnline)}></span>
+      <span
+        className={styles.Status}
+        style={{
+          backgroundColor: IsOnline ? "red" : "red",
+        }}
+      ></span>
       <img className={styles.Avatar} src={avatar} alt={name} width="48" />
       <p className={styles.Name}>{name}</p>
     </>

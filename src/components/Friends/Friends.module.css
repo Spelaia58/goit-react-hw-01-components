@@ -32,10 +32,14 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: red;
 }
-.StatusOnline {
-  background-color: green;
+.StatusOffline {
+  position: relative;
+  top: 25px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 .Name {
   margin: 0;

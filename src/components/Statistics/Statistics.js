@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import StatInfo from "./StatInfo";
+import StatInfo from "../StatInfo/StatInfo";
 
 const Statistics = ({ title, stats }) => {
   return (

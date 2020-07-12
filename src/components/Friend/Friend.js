@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Friends.module.css";
+import defaultImage from "./default.jpg";
 
 const Friend = ({ avatar, name, IsOnline }) => {
   return (
@@ -16,6 +17,11 @@ const Friend = ({ avatar, name, IsOnline }) => {
     </>
   );
 };
+
+Friend.defaultProps = {
+  Avatar: defaultImage,
+};
+
 Friend.propTypes = {
   isOnline: PropTypes.bool.isRequired,
   name: PropTypes.string.isRequired,

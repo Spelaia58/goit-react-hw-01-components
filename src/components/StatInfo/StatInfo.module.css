@@ -1,0 +1,11 @@
+.Label {
+  display: block;
+  font-size: 18px;
+  color: white;
+}
+.Percentage {
+  display: block;
+  font-size: 20px;
+  color: white;
+  padding-top: 10px;
+}

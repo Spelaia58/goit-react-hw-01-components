@@ -1,0 +1,53 @@
+.Profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  background-color: #d2dbdb;
+  padding-bottom: 40px;
+}
+.Description {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+.Avatar {
+  border-radius: 50%;
+}
+.Name {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, sans-serif;
+  color: #1d1e1e;
+}
+.Tag,
+.Location {
+  font-size: 14px;
+  font-family: "Times New Roman", Times, sans-serif;
+  color: #a0a1a1;
+}
+.Stats {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  width: 50%;
+  background-color: #eaeded;
+}
+.Stats li {
+  border: 1px solid #ccc8c8;
+  width: 100%;
+  text-align: center;
+  height: 70px;
+}
+.Label,
+.Quantity {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

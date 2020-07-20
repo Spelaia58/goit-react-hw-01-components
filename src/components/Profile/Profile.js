@@ -1,33 +1,35 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./Profile.module.css";
 
 const Profile = ({ avatar, name, tag, location, followers, views, likes }) => {
   return (
-    <div className="Profile">
-      <div className="Description">
-        <img className="Avatar" src={avatar} alt="user avatar" />
-        <p className="Name">{name}</p>
-        <p className="Tag">@{tag}</p>
-        <p className="Location">{location}</p>
+    <div className={styles.Profile}>
+      <div className={styles.Description}>
+        <img className={styles.Avatar} src={avatar} alt="user avatar" />
+        <p className={styles.Name}>{name}</p>
+        <p className={styles.Tag}>@{tag}</p>
+        <p className={styles.Location}>{location}</p>
       </div>
 
-      <ul className="Stats">
+      <ul className={styles.Stats}>
         <li>
-          <span className="Label">Followers</span>
-          <span className="Quantity">{followers}</span>
+          <span className={styles.Label}>Followers</span>
+          <span className={styles.Quantity}>{followers}</span>
         </li>
         <li>
-          <span className="Label">Views</span>
-          <span className="Quantity">{views}</span>
+          <span className={styles.Label}>Views</span>
+          <span className={styles.Quantity}>{views}</span>
         </li>
         <li>
-          <span className="Label">Likes</span>
-          <span className="Quantity">{likes}</span>
+          <span className={styles.Label}>Likes</span>
+          <span className={styles.Quantity}>{likes}</span>
         </li>
       </ul>
     </div>
   );
 };
+
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
